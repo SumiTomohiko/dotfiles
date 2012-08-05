@@ -69,7 +69,6 @@ setopt auto_param_keys ignoreeof inc_append_history
 
 export EDITOR="vim"
 export LESS="-R"
-export PATH="${HOME}/.local/bin:${PATH}"
 
 alias ls='ls -G'
 alias la='ls -A'
