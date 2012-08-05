@@ -55,8 +55,6 @@ promptinit
 PROMPT_COLOR="${WATER}"
 PROMPT='${DEFAULT}${PROMPT_COLOR}[${DEFAULT}`rprompt-git-current-branch`${PROMPT_COLOR}%~]${prompt_newline}${PROMPT_COLOR}${USER}@$(hostname -s )%(!.#.$)${DEFAULT} '
 RPROMPT=""
-#PROMPT=${PROMPT_COLOR}"${USER}@`hostname -s`%(!.#.$) "${DEFAULT}
-#RPROMPT='${PROMPT_COLOR}[${DEFAULT}`rprompt-git-current-branch`${PROMPT_COLOR}%~]${DEFAULT}'
 
 setopt autopushd auto_menu auto_cd correct auto_name_dirs auto_remove_slash
 setopt extended_history hist_ignore_dups hist_ignore_space prompt_subst
@@ -74,14 +72,13 @@ alias vi="vim"
 alias now="date \"+%Y-%m-%dT%H:%M:%S\""
 alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
-alias w="./waf"
 
 export EDITOR="/usr/local/bin/vim"
 export LESS="-R"
 
 limit coredumpsize 1024000000
 
-export PACKAGESITE="http://ftp4.freebsd.org/pub/FreeBSD/ports/i386/packages-8.2-release/Latest/"
+export PATH="${HOME}/.local/bin:${PATH}"
 
 #mozc_server_start
 export XIM=ibus
