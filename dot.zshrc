@@ -67,23 +67,22 @@ setopt pushd_ignore_dups rm_star_silent sun_keyboard_hack extended_glob
 setopt list_types no_beep always_last_prompt cdable_vars sh_word_split 
 setopt auto_param_keys ignoreeof inc_append_history
 
+export EDITOR="vim"
+export LESS="-R"
+export PATH="${HOME}/.local/bin:${PATH}"
+
 alias ls='ls -G'
 alias la='ls -A'
 alias ll='ls -Al'
 alias grep='grep --color=auto'
 alias history='history -E 1'
 alias diff="colordiff"
-alias vi="vim"
+alias vi="${EDITOR}"
 alias now="date \"+%Y-%m-%dT%H:%M:%S\""
 alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
 
-export EDITOR="/usr/local/bin/vim"
-export LESS="-R"
-
 limit coredumpsize 1024000000
-
-export PATH="${HOME}/.local/bin:${PATH}"
 
 #mozc_server_start
 export XIM=ibus
