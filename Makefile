@@ -1,0 +1,5 @@
+
+install:
+	@./install
+
+.PHONY: install
