@@ -3,7 +3,7 @@
 for dotfile in dot.*
 do
   target=$(echo ${dotfile} | sed -e "s/^dot//")
-  ln -f "${dotfile}" "${HOME}/${target}"
+  ln -sf "$(pwd)/${dotfile}" "${HOME}/${target}"
 done
 
 # vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2
