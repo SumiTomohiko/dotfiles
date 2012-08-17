@@ -58,7 +58,7 @@ function rprompt-git-current-branch {
 autoload promptinit
 promptinit
 PROMPT_COLOR="${WATER}"
-PROMPT='${DEFAULT}${PROMPT_COLOR}[${DEFAULT}`rprompt-git-current-branch`${PROMPT_COLOR}%~]${prompt_newline}${PROMPT_COLOR}${USER}@$(hostname -s )%(!.#.$)${DEFAULT} '
+PROMPT='${DEFAULT}${PROMPT_COLOR}$(tty) [${DEFAULT}`rprompt-git-current-branch`${PROMPT_COLOR}%~]${prompt_newline}${PROMPT_COLOR}${USER}@$(hostname -s )%(!.#.$)${DEFAULT} '
 RPROMPT=""
 
 setopt autopushd auto_menu auto_cd correct auto_name_dirs auto_remove_slash
