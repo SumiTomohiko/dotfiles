@@ -9,6 +9,9 @@ do
       cp -f "${dotfile}" "${dest}"
       ;;
     *)
+      if [ -d "${dest}" ]; then
+        rm -rf "${dest}"
+      fi
       ln -sf "$(pwd)/${dotfile}" "${dest}"
       ;;
   esac
