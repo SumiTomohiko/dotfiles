@@ -17,14 +17,45 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-local RED=$'%{\e[31m%}'
-local GREEN=$'%{\e[32m%}'
-local YELLOW=$'%{\e[33m%}'
-local BLUE=$'%{\e[34m%}'
-local PURPLE=$'%{\e[35m%}'
-local WATER=$'%{\e[36m%}'
-local WHITE=$'%{\e[37m%}'
-local DEFAULT=$'%{\e[m%}'
+local FG_BLACK=$'%{\e[30m%}'
+local FG_RED=$'%{\e[31m%}'
+local FG_GREEN=$'%{\e[32m%}'
+local FG_BROWN=$'%{\e[33m%}'
+local FG_BLUE=$'%{\e[34m%}'
+local FG_PURPLE=$'%{\e[35m%}'
+local FG_CYAN=$'%{\e[36m%}'
+local FG_LGRAY=$'%{\e[37m%}'
+local FG_DGRAY=$'%{\e[1;30m%}'
+local FG_LRED=$'%{\e[1;31m%}'
+local FG_LGREEN=$'%{\e[1;32m%}'
+local FG_YELLOW=$'%{\e[1;33m%}'
+local FG_LBLUE=$'%{\e[1;34m%}'
+local FG_PINK=$'%{\e[1;35m%}'
+local FG_LCYAN=$'%{\e[1;36m%}'
+local FG_WHITE=$'%{\e[1;37m%}'
+local FG_DEFAULT=$'%{\e[m%}'
+local BG_RED=$'\e[0;41m'
+local BG_GREEN=$'\e[0;42m'
+local BG_BROWN=$'\e[0;43m'
+local BG_BLUE=$'\e[0;44m'
+local BG_PURPLE=$'\e[0;45m'
+local BG_CYAN=$'\e[0;46m'
+local BG_GRAY=$'\e[0;47m'
+local ATTR_NORMAL=$'\e[0m'
+local ATTR_BOLD=$'\e[1m'
+local ATTR_ITALICS=$'\e[3m'
+local ATTR_UNDERL=$'\e[4m'
+local ATTR_BLINK=$'\e[5m'
+local ATTR_OUTLINE=$'\e[6m'
+local ATTR_REVERSE=$'\e[7m'
+local ATTR_NONDISP=$'\e[8m'
+local ATTR_STRIKE=$'\e[9m'
+local ATTR_BOLDOFF=$'\e[22m'
+local ATTR_ITALICSOFF=$'\e[23m'
+local ATTR_UNDERLOFF=$'\e[24m'
+local ATTR_BLINKOFF=$'\e[25m'
+local ATTR_REVERSEOFF=$'\e[27m'
+local ATTR_STRIKEOFF=$'\e[29m'
 
 autoload -Uz VCS_INFO_get_data_git; VCS_INFO_get_data_git 2> /dev/null
 
@@ -57,8 +88,9 @@ function rprompt-git-current-branch {
 
 autoload promptinit
 promptinit
-PROMPT_COLOR="${WATER}"
-PROMPT='${DEFAULT}${PROMPT_COLOR}$(tty) [${DEFAULT}`rprompt-git-current-branch`${PROMPT_COLOR}%~]${prompt_newline}${PROMPT_COLOR}${USER}@$(hostname -s )%(!.#.$)${DEFAULT} '
+PROMPT_COLOR="${FG_LBLUE}"
+DIR_COLOR="${FG_YELLOW}"
+PROMPT='${DEFAULT}${DIR_COLOR}$(tty) [${DEFAULT}`rprompt-git-current-branch`${DIR_COLOR}%~]${prompt_newline}${PROMPT_COLOR}${USER}@$(hostname -s )%(!.#.$)${FG_DEFAULT} '
 RPROMPT=""
 
 setopt autopushd auto_menu auto_cd correct auto_name_dirs auto_remove_slash
