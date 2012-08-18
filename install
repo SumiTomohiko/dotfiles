@@ -2,8 +2,16 @@
 
 for dotfile in dot.*
 do
-  target=$(echo ${dotfile} | sed -e "s/^dot//")
-  ln -sf "$(pwd)/${dotfile}" "${HOME}/${target}"
+  name=$(echo ${dotfile} | sed -e "s/^dot//")
+  dest="${HOME}/${name}"
+  case "${name}" in
+    .login_conf)
+      cp -f "${dotfile}" "${dest}"
+      ;;
+    *)
+      ln -sf "$(pwd)/${dotfile}" "${dest}"
+      ;;
+  esac
 done
 
 # vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2
