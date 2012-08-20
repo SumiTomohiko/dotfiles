@@ -1,8 +1,7 @@
 export LANG=ja_JP.UTF-8
 
 xrdb -merge "${HOME}/.Xresources"
-setxkbmap -layout jp -option ctrl:nocaps
-setxkbmap -option terminate:ctrl_alt_bksp
+setxkbmap -option ctrl:nocaps -option terminate:ctrl_alt_bksp
 xloadimage -center -onroot "${HOME}/wallpapers/$(hostname -s).jpg"
 
 cd "${HOME}"
