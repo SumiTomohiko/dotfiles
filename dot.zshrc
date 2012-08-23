@@ -2,6 +2,10 @@
 if [ -z "${SSH_AGENT_PID}" ]; then
     exec ssh-agent "${SHELL}"
 fi
+ssh-add -l > /dev/null
+if [ "$?" != "0" ]; then
+    ssh-add
+fi
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
