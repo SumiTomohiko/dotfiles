@@ -103,9 +103,6 @@ setopt pushd_ignore_dups rm_star_silent sun_keyboard_hack extended_glob
 setopt list_types no_beep always_last_prompt cdable_vars sh_word_split 
 setopt auto_param_keys ignoreeof inc_append_history
 
-export EDITOR="vim"
-export LESS="-R"
-
 alias ls='ls -G'
 alias la='ls -A'
 alias ll='ls -Al'
@@ -126,5 +123,9 @@ export QT_IM_MODULE=xim
 export XMODIFIERS=@im=ibus
 export XIM_PROGRAM="ibus-daemon"
 export XIM_ARGS="-r --daemonize --xim"
+
+export EDITOR="vim"
+export LESS="-R"
+export MAKEOBJDIR="."
 
 # vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4 filetype=zsh
