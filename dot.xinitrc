@@ -6,6 +6,6 @@ convert "${HOME}/wallpapers/$(hostname -s ).jpg" -adaptive-resize $(xwininfo -ro
 xset s off -dpms
 
 mlterm &
-exec uwm
+exec fawm --log-file="${HOME}/projects/fawm/fawm.log"
 
 # vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2 filetype=sh
