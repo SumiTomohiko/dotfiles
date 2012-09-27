@@ -2,10 +2,6 @@
 if [ -z "${SSH_AGENT_PID}" ]; then
     exec ssh-agent "${SHELL}"
 fi
-ssh-add -l > /dev/null
-if [ "$?" != "0" ]; then
-    ssh-add
-fi
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -122,7 +118,7 @@ alias grep='grep --color=auto'
 alias history='history -E 1'
 alias diff="colordiff"
 alias vi="${EDITOR}"
-alias now="date \"+%Y-%m-%dT%H:%M:%S\""
+alias n="date \"+%Y-%m-%dT%H:%M:%S\""   # now
 alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
 
