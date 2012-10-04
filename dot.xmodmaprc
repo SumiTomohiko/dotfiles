@@ -1,0 +1,4 @@
+keysym Henkan = Return
+keysym Hiragana_Katakana = Shift_L
+keysym Muhenkan = Shift_L
+keysym Zenkaku_Hankaku = Escape
