@@ -3,4 +3,4 @@
 # see login.conf(5)
 #
 me:\
-	:path=~/.local/bin /sbin /bin /usr/sbin /usr/bin /usr/games /usr/local/sbin /usr/local/bin:
+	:path=~/.local/bin /usr/local/sbin /usr/local/bin /sbin /bin /usr/sbin /usr/bin /usr/games:
