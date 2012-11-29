@@ -122,6 +122,7 @@ alias n="date \"+%Y-%m-%dT%H:%M:%S\""   # now
 alias now=n
 alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
+alias p="popd"
 
 limit coredumpsize 1024000000
 
