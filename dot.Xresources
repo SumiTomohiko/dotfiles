@@ -6,3 +6,8 @@ xterm*cjkWidth: true
 xterm*faceSize: 18
 xterm*faceName: Inconsolata
 xterm*faceNameDoublesize: VL Gothic
+
+urxvt*background: black
+urxvt*foreground: white
+urxvt*scrollBar_right: true
+urxvt*font: xft:VL Gothic:pixelsize=22
