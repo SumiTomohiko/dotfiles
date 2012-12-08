@@ -1,0 +1,8 @@
+xterm*background: black
+xterm*foreground: white
+xterm*scrollBar: true
+xterm*rightScrollBar: true
+xterm*cjkWidth: true
+xterm*faceSize: 18
+xterm*faceName: Inconsolata
+xterm*faceNameDoublesize: VL Gothic
