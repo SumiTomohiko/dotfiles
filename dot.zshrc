@@ -114,6 +114,7 @@ export MAKEOBJDIR="."
 alias ls='ls -G'
 alias la='ls -A'
 alias ll='ls -Al'
+alias lh='ls -Alh'
 alias grep='grep --color=auto'
 alias history='history -E 1'
 alias diff="colordiff"
