@@ -3,8 +3,8 @@ xterm*foreground: white
 xterm*scrollBar: true
 xterm*rightScrollBar: true
 xterm*cjkWidth: true
-xterm*faceSize: 18
-xterm*faceName: Inconsolata
+xterm*faceSize: 14
+xterm*faceName: VL Gothic
 xterm*faceNameDoublesize: VL Gothic
 
 urxvt*background: black
