@@ -90,7 +90,7 @@ autoload promptinit
 promptinit
 PROMPT_COLOR="${FG_BLUE}"
 DIR_COLOR="${FG_YELLOW}"
-PROMPT='${DIR_COLOR}$(tty) ${USER}@$(hostname -s) [`rprompt-git-current-branch`${DIR_COLOR}%~]${prompt_newline}${PROMPT_COLOR}%(!.#.$)${FG_DEFAULT} '
+PROMPT='${DIR_COLOR}$(tty) ${USER}@$(hostname) [`rprompt-git-current-branch`${DIR_COLOR}%~]${prompt_newline}${PROMPT_COLOR}%(!.#.$)${FG_DEFAULT} '
 RPROMPT=""
 
 setopt autopushd auto_menu auto_cd correct auto_name_dirs auto_remove_slash
