@@ -119,8 +119,6 @@ alias grep='grep --color=auto'
 alias history='history -E 1'
 alias diff="colordiff"
 alias vi="${EDITOR}"
-alias n="date \"+%Y-%m-%dT%H:%M:%S\""   # now
-alias now=n
 alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
 alias p="popd"
