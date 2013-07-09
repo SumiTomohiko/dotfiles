@@ -126,4 +126,9 @@ alias p="popd"
 
 limit coredumpsize 1024000000
 
+platformrc="$0.$(uname)"
+if [ -f "${platformrc}" ]; then
+    source "${platformrc}"
+fi
+
 # vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4 filetype=zsh
