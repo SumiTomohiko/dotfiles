@@ -1,5 +1,9 @@
 [color]
-	ui = auto
+    ui = auto
 [user]
-	name = Tomohiko Sumi
-	email = SumiTomohiko@neko-daisuki.ddo.jp
+    name = Tomohiko Sumi
+    email = SumiTomohiko@neko-daisuki.ddo.jp
+[push]
+    default = simple
+
+# vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4

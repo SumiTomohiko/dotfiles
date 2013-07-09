@@ -1,5 +1,5 @@
 bg_color=black
 fg_color=white
-fontsize=22
+fontsize=28
 scrollbar_mode=right
 type_engine=xft

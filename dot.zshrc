@@ -83,14 +83,14 @@ function rprompt-git-current-branch {
                  color=%F{red}
          fi
               
-        echo "$color$name$action%f%b "
+        echo "$color$name$action%f%b:"
 }
 
 autoload promptinit
 promptinit
-PROMPT_COLOR="${FG_LBLUE}"
+PROMPT_COLOR="${FG_BLUE}"
 DIR_COLOR="${FG_YELLOW}"
-PROMPT='${DEFAULT}${DIR_COLOR}$(tty) [${DEFAULT}`rprompt-git-current-branch`${DIR_COLOR}%~]${prompt_newline}${PROMPT_COLOR}${USER}@$(hostname -s )%(!.#.$)${FG_DEFAULT} '
+PROMPT='${DIR_COLOR}$(tty) ${USER}@$(hostname)${prompt_newline}`rprompt-git-current-branch`${DIR_COLOR}%~${prompt_newline}${PROMPT_COLOR}%(!.#.$)${FG_DEFAULT} '
 RPROMPT=""
 
 setopt autopushd auto_menu auto_cd correct auto_name_dirs auto_remove_slash
@@ -114,12 +114,11 @@ export MAKEOBJDIR="."
 alias ls='ls -G'
 alias la='ls -A'
 alias ll='ls -Al'
+alias lh='ls -Alh'
 alias grep='grep --color=auto'
 alias history='history -E 1'
 alias diff="colordiff"
 alias vi="${EDITOR}"
-alias n="date \"+%Y-%m-%dT%H:%M:%S\""   # now
-alias now=n
 alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
 alias p="popd"
