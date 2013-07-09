@@ -125,7 +125,7 @@ alias p="popd"
 
 limit coredumpsize 1024000000
 
-platformrc="$0.$(uname)"
+platformrc="${HOME}/.zshrc.$(uname)"
 if [ -f "${platformrc}" ]; then
     source "${platformrc}"
 fi
