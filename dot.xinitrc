@@ -11,7 +11,6 @@ xmodmap "${HOME}/.xmodmaprc"
 convert "${HOME}/wallpapers/$(hostname -s ).jpg" -adaptive-resize $(xwininfo -root | grep geometry | awk '{ print $2 }') - | xloadimage -center -onroot stdin
 xset s off -dpms
 
-mlterm &
 exec fawm --log-file="${HOME}/projects/fawm/fawm.log"
 
 # vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2 filetype=sh
