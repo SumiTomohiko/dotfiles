@@ -125,4 +125,9 @@ alias p="popd"
 
 limit coredumpsize 1024000000
 
+autojump="${HOME}/.autojump/etc/profile.d/autojump.zsh"
+if [ -s "${autojump}" ]; then
+    . ${autojump}
+fi
+
 # vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4 filetype=zsh
