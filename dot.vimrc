@@ -54,6 +54,7 @@ autocmd BufNewFile *.h2yog 0r $HOME/.vim/templates/skeleton.h2yog
 autocmd BufNewFile *.lua 0r $HOME/.vim/templates/skeleton.lua
 autocmd BufNewFile *.rst 0r $HOME/.vim/templates/skeleton.rst
 autocmd BufNewFile *.hs 0r $HOME/.vim/templates/skeleton.hs
+autocmd BufNewFile *.java 0r $HOME/.vim/templates/skeleton.java
 "autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " For Gauche
 autocmd FileType scheme :let is_gauche=1
