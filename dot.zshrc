@@ -129,5 +129,9 @@ autojump="${HOME}/.autojump/etc/profile.d/autojump.zsh"
 if [ -s "${autojump}" ]; then
     . ${autojump}
 fi
+platformrc="${HOME}/.zshrc.$(uname)"
+if [ -f "${platformrc}" ]; then
+    source "${platformrc}"
+fi
 
 # vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4 filetype=zsh
