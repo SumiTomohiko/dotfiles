@@ -57,3 +57,5 @@ autocmd BufNewFile *.hs 0r $HOME/.vim/templates/skeleton.hs
 "autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " For Gauche
 autocmd FileType scheme :let is_gauche=1
+
+set maxmempattern=2000000
