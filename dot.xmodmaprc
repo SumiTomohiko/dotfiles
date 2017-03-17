@@ -2,3 +2,4 @@ keysym Henkan = Return
 keysym Hiragana_Katakana = Shift_L
 keysym Muhenkan = BackSpace
 keysym Zenkaku_Hankaku = Escape
+pointer = 1 2 3 5 4
