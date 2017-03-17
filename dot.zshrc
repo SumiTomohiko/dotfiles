@@ -111,17 +111,17 @@ export EDITOR="vim"
 export LESS="-R"
 export MAKEOBJDIR="."
 
-alias ls='ls -G'
-alias la='ls -A'
-alias ll='ls -Al'
-alias lh='ls -Alh'
+alias gdb="gdb -q"
 alias grep='grep --color=auto'
 alias history='history -E 1'
 alias diff="colordiff"
-alias vi="${EDITOR}"
-alias gdb="gdb -q"
-alias yd="youtube-dl --title --ignore-errors"
+alias la='ls -A'
+alias lh='ls -Alh'
+alias ll='ls -Al'
+alias ls='ls -G'
 alias p="popd"
+alias vi="${EDITOR}"
+alias yd="youtube-dl --title --ignore-errors"
 
 # shortcuts
 alias j="make java"
