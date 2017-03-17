@@ -114,7 +114,6 @@ export MAKEOBJDIR="."
 alias gdb="gdb -q"
 alias grep='grep --color=auto'
 alias history='history -E 1'
-alias diff="colordiff"
 alias la='ls -A'
 alias lh='ls -Alh'
 alias ll='ls -Al'
@@ -122,6 +121,9 @@ alias ls='ls -G'
 alias p="popd"
 alias vi="${EDITOR}"
 alias yd="youtube-dl --title --ignore-errors"
+if [ -x "/usr/local/bin/colordiff" ]; then
+    alias diff="/usr/local/bin/colordiff"
+fi
 
 # shortcuts
 alias j="make java"
