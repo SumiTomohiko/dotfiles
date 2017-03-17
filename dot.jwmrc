@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- The root menu. -->
+    <RootMenu onroot="1">
+	<Program label="Firefox">firefox</Program>
+        <Program label="mlterm">mlterm</Program>
+        <Program label="qtfm">qtfm</Program>
+	<Program label="Github">firefox http://github.com/SumiTomohiko</Program>
+	<Program label="box">firefox http://app.box.com/</Program>
+	<Program label="Amazon (1/24 car models)">firefox &quot;http://www.amazon.co.jp/s/ref=sr_nr_p_n_feature_five_bro_10/378-1600463-7907051?rh=n%3A2277721051%2Cn%3A!2277722051%2Cn%3A2189366051%2Cn%3A2189370051%2Cp_n_feature_five_browse-bin%3A2200251051&amp;bbn=2189370051&amp;ie=UTF8&amp;qid=1412612926&amp;rnid=2200245051&quot;</Program>
+	<Program label="Amazon (1/35 Tamiya military models)">firefox &quot;http://www.amazon.co.jp/s/ref=sr_nr_p_89_0/376-7005947-9196527?fst=as%3Aoff&amp;rh=n%3A2277721051%2Cn%3A!2277722051%2Cn%3A2189366051%2Cn%3A2189372051%2Cp_n_feature_five_browse-bin%3A2200253051%2Cp_89%3A%E3%82%BF%E3%83%9F%E3%83%A4&amp;bbn=2189372051&amp;ie=UTF8&amp;qid=1417707164&amp;rnid=2321255051&quot;</Program>
+	<Program label="Amazon (1/72 aircraft models)">firefox &quot;http://www.amazon.co.jp/s/ref=sr_nr_p_n_feature_five_bro_18/377-8542619-4611665?fst=as%3Aoff&amp;rh=n%3A2277721051%2Cn%3A!2277722051%2Cn%3A2189366051%2Cn%3A2189367051%2Cp_n_feature_five_browse-bin%3A2200257051&amp;bbn=2189367051&amp;ie=UTF8&amp;qid=1425813415&amp;rnid=2200245051&quot;</Program>
+	<Program label="Amazon (plastic models)">firefox &quot;http://www.amazon.co.jp/%E3%83%97%E3%83%A9%E3%83%A2%E3%83%87%E3%83%AB-%E6%A8%A1%E5%9E%8B-%E3%83%9B%E3%83%93%E3%83%BC-hobby-%E9%80%9A%E8%B2%A9/b/ref=sv_hb_2/378-8766973-9107210?ie=UTF8&amp;node=2189366051&quot;</Program>
+        <Separator/>
+	<Program label="Inkscape">inkscape</Program>
+	<Program label="Geeqie">geeqie</Program>
+	<Program label="Gimp">gimp --no-shm</Program>
+        <Separator/>
+	<Restart label="Restart"/>
+	<Exit label="Exit" confirm="false"/>
+    </RootMenu>
+
+    <!-- Options for program groups. -->
+    <Group>
+        <Option>tiled</Option>
+        <Option>aerosnap</Option>
+    </Group>
+    <Group>
+        <Class>Pidgin</Class>
+        <Option>sticky</Option>
+    </Group>
+    <Group>
+        <Name>xterm</Name>
+        <Option>vmax</Option>
+    </Group>
+    <Group>
+        <Name>xclock</Name>
+        <Option>drag</Option>
+        <Option>notitle</Option>
+    </Group>
+
+    <!-- Tray at the bottom. -->
+    <Tray x="0" y="-1" autohide="off">
+
+        <TrayButton icon="jwm-blue">root:1</TrayButton>
+        <Spacer width="2"/>
+        <TrayButton label="_">showdesktop</TrayButton>
+        <Spacer width="2"/>
+
+        <Pager labeled="true"/>
+
+        <TaskList maxwidth="256"/>
+
+        <Dock/>
+	<Clock format="%Y-%m-%d (%a) %H:%M"/>
+
+    </Tray>
+
+    <!-- Visual Styles -->
+    <WindowStyle>
+        <Font>VL PGothic-18</Font>
+        <Width>4</Width>
+        <Height>21</Height>
+        <Corner>3</Corner>
+        <Foreground>black</Foreground>
+        <Background>light gray</Background>
+        <Outline>#000000</Outline>
+        <Opacity>0.5</Opacity>
+        <Active>
+            <Foreground>black</Foreground>
+            <Background>light pink</Background>
+            <Outline>#000000</Outline>
+            <Opacity>1.0</Opacity>
+        </Active>
+    </WindowStyle>
+    <TrayStyle group="true" list="all">
+        <Font>VL PGothic-18</Font>
+        <Background>light gray</Background>
+        <Foreground>black</Foreground>
+        <Outline>#000000</Outline>
+        <Opacity>0.75</Opacity>
+        <Active>
+            <Foreground>black</Foreground>
+            <Background>light pink</Background>
+        </Active>
+    </TrayStyle>
+    <PagerStyle>
+        <Outline>#000000</Outline>
+        <Foreground>#555555</Foreground>
+        <Background>#333333</Background>
+        <Text>#FFFFFF</Text>
+        <Active>
+            <Foreground>#0077CC</Foreground>
+            <Background>#004488</Background>
+        </Active>
+    </PagerStyle>
+    <MenuStyle>
+        <Font>VL PGothic-16</Font>
+        <Foreground>black</Foreground>
+        <Background>light gray</Background>
+        <Outline>#000000</Outline>
+        <Active>
+            <Foreground>black</Foreground>
+            <Background>light pink</Background>
+        </Active>
+        <Opacity>0.85</Opacity>
+    </MenuStyle>
+    <PopupStyle>
+        <Font>VL PGothic-18</Font>
+        <Foreground>#000000</Foreground>
+        <Background>#999999</Background>
+    </PopupStyle>
+    <ClockStyle><Font>VL Gothic-18</Font></ClockStyle>
+
+    <!-- Path where icons can be found.
+         IconPath can be listed multiple times to allow searching
+         for icons in multiple paths.
+      -->
+    <IconPath>
+        $HOME/.icons
+        /usr/local/share/icons
+        /usr/local/share/pixmaps
+        /usr/local/lib/X11/icons
+    </IconPath>
+    <IconPath>
+        /usr/local/share/jwm
+    </IconPath>
+
+    <!-- Virtual Desktops -->
+    <!-- Desktop tags can be contained within Desktops for desktop names. -->
+    <Desktops width="4" height="1">
+        <!-- Default background. Note that a Background tag can be
+              contained within a Desktop tag to give a specific background
+              for that desktop.
+         -->
+	<Background type="command">
+		convert &quot;${HOME}/wallpapers/$(hostname -s ).jpg&quot; -adaptive-resize $(xwininfo -root | grep geometry | awk '{ print $2 }') - | xloadimage -center -onroot stdin
+	</Background>
+    </Desktops>
+
+    <!-- Double click speed (in milliseconds) -->
+    <DoubleClickSpeed>400</DoubleClickSpeed>
+
+    <!-- Double click delta (in pixels) -->
+    <DoubleClickDelta>2</DoubleClickDelta>
+
+    <!-- The focus model (sloppy or click) -->
+    <FocusModel>click</FocusModel>
+
+    <!-- The snap mode (none, screen, or border) -->
+    <SnapMode distance="10">border</SnapMode>
+
+    <!-- The move mode (outline or opaque) -->
+    <MoveMode>opaque</MoveMode>
+
+    <!-- The resize mode (outline or opaque) -->
+    <ResizeMode>opaque</ResizeMode>
+
+    <!-- Key bindings -->
+    <Key key="Up">up</Key>
+    <Key key="Down">down</Key>
+    <Key key="Right">right</Key>
+    <Key key="Left">left</Key>
+    <Key key="h">left</Key>
+    <Key key="j">down</Key>
+    <Key key="k">up</Key>
+    <Key key="l">right</Key>
+    <Key key="Return">select</Key>
+    <Key key="Escape">escape</Key>
+
+    <Key mask="A" key="Tab">nextstacked</Key>
+    <Key mask="A" key="F4">close</Key>
+    <Key mask="A" key="#">desktop#</Key>
+    <Key mask="A" key="F1">root:1</Key>
+    <Key mask="A" key="F2">window</Key>
+    <Key mask="A" key="F10">maximize</Key>
+    <Key mask="A" key="Right">rdesktop</Key>
+    <Key mask="A" key="Left">ldesktop</Key>
+    <Key mask="A" key="Up">udesktop</Key>
+    <Key mask="A" key="Down">ddesktop</Key>
+
+</JWM>
