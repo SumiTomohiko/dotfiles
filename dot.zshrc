@@ -123,6 +123,11 @@ alias gdb="gdb -q"
 alias yd="youtube-dl --title --ignore-errors"
 alias p="popd"
 
+# shortcuts
+alias j="make java"
+alias m="make"
+alias al="alpine"
+
 limit coredumpsize 1024000000
 
 autojump="${HOME}/.autojump/etc/profile.d/autojump.zsh"
